@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>petshop</title>
+    <style>
+.body{
+   font-family: Arial, Helvetica, sans-serif;
+   background-color: #f9f9f9;
+      color:black;  
+    }
+nav {
+      background-color:rgb(10, 101, 104);
+      padding: 15px ;
+    }
+nav ul {
+      display: flex;
+      justify-content: left;
+      list-style: none; 
+      margin: 0%;  
+      padding: 0;
+      gap: 20px;
+    }
+
+nav ul li a {
+      text-decoration:none;
+      color:black;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+nav ul li a:hover {
+      color: cadetblue;
+    }
+ header {
+  display: flex;
+  align-items: center;
+  background-color: cadetblue;
+  color: black;
+  gap: 10px;
+}
+header img {
+    display: block;
+    width: 75px;
+    border-radius: 100px;
+}
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container {
+      width: 90x;
+      margin: 30px auto;
+
+    }
+h2 {
+      color:black;
+      
+    }
+h3{
+      
+      color: black;
+    }
+@keyframes float{
+      0%{
+        transform: translatey(0px);}
+      50%{
+        transform: translateY(-10px);}
+      100%{
+                transform: translatey(10px) }
+    }
+.pet-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 90px;
+      margin-bottom: 10px;
+      animation: float 5s ease-in-out infinite;
+         }
+.pet-item:hover{
+      transform: scale(1.100);
+    }
+.pet-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+.pet-item {
+      background:cadetblue;
+      border: 1px solid #ddd;
+      border-radius: 100px; 
+      padding: 15px;
+      width: 200px;
+      text-align: center;
+      color: azure; }
+.add-to-cart-btn{
+        border: 90px;
+        border-radius: 900px;
+        color: cadetblue;
+        background-color: black;
+        font-size: large;}
+.add-to-cart-btn:hover{
+                transform: scale(1.10); }
+footer {
+        background-color: rgb(10, 101, 104);
+        color: azure;
+        padding: 20px 0;
+        text-align: center;
+        margin-top: 30px;}
+
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.footer-links li a {
+  color: black;
+  text-decoration: none;
+  font: bold;
+  font-size: larger;
+}
+.footer-links li a:hover {
+  text-decoration: underline; }
+</style>
+</head>
+<body>
+<nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Pets</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <header>
+    <img src="./src/Annotation.png" alt="">
+    <h1> INION PET SHOP</h1>
+  </header>
+    <div class="container">
+    <h2>Our Pets</h2>
+    <div class="pet-list">
+      <div class="pet-item">
+        <img src="./src/chines.jpg" alt="Cute Puppy" />
+        <h3>  INION MALTESE</h3>
+        <p>friendly and curious Kitten,our one of the favorite kitten</p>
+        <h2>$5000</h2>    
+        <button class="add-to-cart-btn" onclick="location.href='sign.html'">Add to Cart</button>
+        </div>
+      <div class="pet-item">
+        <img src="./src/ini.jpg" alt="Kitten" />
+        <h3>Tabby Kitten</h3>
+        <p>Soft and cuddly friend ,easy to care</p>
+        <h2>$4500</h2>
+        <button class="add-to-cart-btn" onclick="location.href='sign.html'">Add to Cart</button></div>
+        <div class="pet-item">
+        <img src="./src/pic.jpg" alt="MINI INI" />
+        <h3>MINI INI</h3>
+        <p>so friendly and silent guy then it take only hygenic foods only </p>
+          <h2>$4500</h2>
+        <button class="add-to-cart-btn" onclick="location.href='sign.html'">Add to Cart</button>
+      </div>
+      <div class="pet-item">
+        <img src="./src/500px.jpg" alt="sandy">
+        <h3>SANDY</h3>
+        <p>he is very enthusiastic guy        </p>
+      <h2>$3000</h2>
+        <button class="add-to-cart-btn" onclick="location.href='sign.html'">Add to Cart</button>
+      </div>
+      <div class="pet-item">
+        <img src="./src/photo.jpg" alt="puppy">
+        <h3>ANGELIN</h3>
+        <p>it is quit guy and adapt to any climate</p>
+        <h2>$3500</h2>
+        <button class="add-to-cart-btn" onclick="location.href='sign.html'">Add to Cart</button>
+      </div>
+      <div class="pet-item">
+        <img src="./src/cute.jpg" alt="cute">
+        <h3>BUPPY</h3>
+        <p> very grooming guy but it take a selfcare</p>
+        <h2>$5000</h2>
+        <button class="add-to-cart-btn" onclick="location.href='sign.html'">Add to Cart</button>
+         </div>
+        <div class="pet-item">
+          <img src="./src/emp.jpg" alt="empty">
+          <h3>OREO</h3>
+          <p>he is playful guy and displine guy</p>
+          <h2>$4500</h2>
+          <button class="add-to-cart-btn" onclick="location.href='sign.html'">Add to Cart</button>
+        </div>
+          <div class="pet-item">
+            <img src="./src/por.jpg" alt="port">
+          <h3>GIMMY</h3>   
+        <p>emotion guy and very loyal person </p> 
+      <h2>$6000</h2> 
+      <button class="add-to-cart-btn" onclick="location.href='sign.html'">Add to Cart</button>
+</div>
+  </div>
+</body>
+<footer>
+  <div class="footer-container">
+    <p>&copy; Pet Shop. All rights reserved.</p>
+    <ul class="footer-links">
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Help</a></li>
+    </ul>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125129.70294201639!2d77.32416578516005!3d11.458026093179075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba93d703db77d29%3A0x12f3699ef865609a!2sAngels%20paradise%20pet%20shop%20and%20Aquarium!5e0!3m2!1sen!2sin!4v1752055309927!5m2!1sen!2sin" width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+</footer>
+</html>
+
